@@ -1,6 +1,6 @@
 # D.Eco_Android
 
-One Paragraph of project description goes here
+This repository contains the code base for the Android version of the D.Eco tree mobile application. The application has been developed by a group of 4 students enrolled in Research and Development at Drury University, Spring 2017 - Spring 2018.
 
 ## Getting Started
 
