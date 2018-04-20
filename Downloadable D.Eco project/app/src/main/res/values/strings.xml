@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">D.Eco</string>
+    <string name="title_activity_home_map">Map</string>
+    <string name="title_activity_tree_tour">Map</string>
+    <string name="no_description">No description available.</string>
+    <string name="title_activity_tree_info_page">TreeInfoPage</string>
+</resources>
