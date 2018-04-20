@@ -1,6 +1,6 @@
 # D.Eco_Android
 
-This repository contains the code base for the Android version of the D.Eco tree mobile application. The application has been developed by a group of 4 students enrolled in Research and Development at Drury University, Spring 2017 - Spring 2018. ---
+This repository contains the code base for the Android version of the D.Eco tree mobile application. The application has been developed by a group of 4 students enrolled in Research and Development at Drury University, Spring 2017 - Spring 2018. - Author Cory Harris
 
 ## Getting Started
 
@@ -14,12 +14,23 @@ These instructions will get you a copy of the project up and running on your loc
 ### Installing
 
 Step 1: Visit [D.Eco Android](https://github.com/DEco-DUCS/D.Eco_Android "D.Eco Android repository") and clone the repository to your local machine.
+```
 
   * If you are using the Github Desktop app, simply clone press clone or download, then Open in Desktop.
   * Otherwise, press clone or download, then Download ZIP
   
   
 ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/download_repo.png)
+
+```
+
+Step 2: Extract the project.
+```  
+  * If using Github Destop, navigate to your local Github documents folder and find the folder containing the cloned project. It should be called D.Eco_Android.
+  
+![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/github_local_folder.png)
+
+```
 
 A step by step series of examples that tell you have to get a development env running
 
