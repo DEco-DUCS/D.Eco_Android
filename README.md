@@ -15,6 +15,12 @@ These instructions will get you a copy of the project up and running on your loc
 
 Step 1: Visit [D.Eco Android](https://github.com/DEco-DUCS/D.Eco_Android "D.Eco Android repository") and clone the repository to your local machine.
 
+  * If you are using the Github Desktop app, simply clone press clone or download, then Open in Desktop.
+  * Otherwise, press clone or download, then Download ZIP
+  
+  
+![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/download_repo.png)
+
 A step by step series of examples that tell you have to get a development env running
 
 Say what the step will be
