@@ -9,8 +9,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
   * Download Android Studio
+  * Have an Android device (sotware version 5.0 or later, not required but recommended)
 
 ### Installing
+
+Step 1: Visit [D.Eco Android](https://github.com/DEco-DUCS/D.Eco_Android "D.Eco Android repository") and clone the repository to your local machine.
 
 A step by step series of examples that tell you have to get a development env running
 
