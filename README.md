@@ -34,23 +34,13 @@ These instructions will get you a copy of the project up and running on your loc
 #### Step 3: Import to Android Studio
 
   * First, when Android Studio launches, select the Import project option.
+  
   ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/as_import_scrn.png)
+  
+  * Then navigate to the directory where you have stored your copy of the project, select "Downloadable D.Eco project", and press Okay.
+  
+  ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/as_select_import.png)
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Running the tests
 
