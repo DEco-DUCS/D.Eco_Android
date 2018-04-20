@@ -17,6 +17,8 @@ Step 1: Visit [D.Eco Android](https://github.com/DEco-DUCS/D.Eco_Android "D.Eco 
 
   * If you are using the Github Desktop app, simply clone press clone or download, then Open in Desktop.
   * Otherwise, press clone or download, then Download ZIP
+  
+  
 ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/download_repo.png)
 
 A step by step series of examples that tell you have to get a development env running
