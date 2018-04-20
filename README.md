@@ -40,6 +40,22 @@ These instructions will get you a copy of the project up and running on your loc
   * Then navigate to the directory where you have stored your copy of the project, select "Downloadable D.Eco project", and press Okay.
   
   ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/as_select_import.png)
+  
+##### You now have a local version of the D.Eco Android application. 
+
+If you are having issues running the application locally, you may need to disable the instant run feature in Android Studio. 
+
+##### Disabling Instant Run
+
+In android Studio,
+
+```
+File > Settings > Build, Execution, Deployment > Instant Run 
+```
+
+Deselect the first box, which turns Instant Run off.
+
+![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/disable_ir.png)
 
 
 ## Running the tests
