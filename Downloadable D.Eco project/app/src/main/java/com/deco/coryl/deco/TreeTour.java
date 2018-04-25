@@ -54,9 +54,9 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
 
     private GoogleMap mMap;
     // URL_STRING is the url where the restful api is located
-    String URL_STRING = "http://mcs.drury.edu/deco/treeservice/index.php";
+    String URL_STRING = "http://mcs.drury.edu/deco/treeservice/index2.php";
     // Url string pointing to images on ec2 instance
-    String IMAGE_URL_STRING = "http://ec2-34-210-217-19.us-west-2.compute.amazonaws.com/PHP/html/adminPHP/html/upload/";
+    String IMAGE_URL_STRING = "http://mcs.drury.edu/deco/admin/html/upload/";
     // Tag name for debugging
     private String TAG = TreeTour.class.getSimpleName();
     // count for how many times location has changed
