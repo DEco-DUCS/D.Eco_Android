@@ -56,7 +56,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap mMap;
     // URL_STRING is the url where the restful api is located
-    String URL_STRING = "http://ec2-34-210-220-81.us-west-2.compute.amazonaws.com//index.php";
+    String URL_STRING = "http://mcs.drury.edu/deco/treeservice/index.php";
     // Tag name for debugging
     private String TAG = MainActivity.class.getSimpleName();
 
