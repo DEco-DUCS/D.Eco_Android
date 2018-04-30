@@ -37,7 +37,7 @@ These instructions will get you a copy of the project up and running on your loc
   
   ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/as_import_scrn.png)
   
-  * Then navigate to the directory where you have stored your copy of the project, select "Downloadable D.Eco project", and press Okay.
+  * Then navigate to the directory where you have stored your copy of the project, select "Downloadable D.Eco project", and press OK.
   
   ![](https://github.com/DEco-DUCS/D.Eco_Android/blob/master/images/as_select_import.png)
   
