@@ -56,7 +56,7 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
     // URL_STRING is the url where the restful api is located
     String URL_STRING = "http://mcs.drury.edu/deco/treeservice/index2.php";
     // Url string pointing to images on ec2 instance
-    String IMAGE_URL_STRING = "http://mcs.drury.edu/deco/admin/html/upload/";
+    String IMAGE_URL_STRING = "http://mcs.drury.edu/deco/admin/html/";
     // Tag name for debugging
     private String TAG = TreeTour.class.getSimpleName();
     // count for how many times location has changed
@@ -409,6 +409,7 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
                         String latitude = c.getString("latitude");
                         String longitude = c.getString("longitude");
                         String description = c.getString("description");
+                        String filepath = c.getString("filepath");
 
                         // temp hash map for single tree
                         HashMap<String, String> tree = new HashMap<>();
@@ -420,6 +421,7 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
                         tree.put("common_name",cname);
                         tree.put("id",id);
                         tree.put("description",description);
+                        tree.put("filepath",filepath);
 
                         //adding tree to list of trees
                         treeList.add(tree);
@@ -470,9 +472,10 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
                 double longitude = Double.parseDouble((String) tree.get("longitude"));
                 int id = Integer.parseInt((String) tree.get("id"));
                 String description = (String) tree.get("description");
+                String filepath = (String) tree.get("filepath");
 
                 // convert cName to picture file name
-                String[] nameAry = cName.split(" ");
+                String[] nameAry = filepath.split(" ");
                 String filename = IMAGE_URL_STRING;
                 if(nameAry.length >=1) {
                     for(int index=0; index<nameAry.length; index++){
@@ -484,14 +487,16 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
                             filename += "%20"+nameAry[index];
                         }
                     }
-                    filename += ".jpg";
+                    //filename += ".jpg";
                 }
 
                 // Create tree object for data passing
                 Tree tempTree = new Tree(latitude,longitude);
                 tempTree.setTitle(cName);
                 tempTree.setSnippet(sName);
-                tempTree.setImage(filename);
+                if(filename != IMAGE_URL_STRING) {
+                    tempTree.setImage(filename);
+                }
                 if(description != null) {
                     tempTree.setDescription(description);
                 }

@@ -56,14 +56,19 @@ public class CustomInfoWindowGoogleMaps implements GoogleMap.InfoWindowAdapter {
         Tree infoWindowData = (Tree) marker.getTag();
 
         //TODO: fix bug that makes the previous marker's image show up in the current info window
-        ImageDownloader imgDownloader = new ImageDownloader(img);
-        imgDownloader.execute(infoWindowData.getImage());
-        img.setImageBitmap(mBitmap);
+        try {
+            ImageDownloader imgDownloader = new ImageDownloader(img);
+            imgDownloader.execute(infoWindowData.getImage());
+            img.setImageBitmap(mBitmap);
+        } catch(NullPointerException e) {
+            System.out.print("Null pointer exception: image.");
+        }
 
-        if(infoWindowData.getDescription() != null) {
+        try{
             description_tv.setText(infoWindowData.getDescription());
-        } else {
+        } catch(NullPointerException e) {
             description_tv.setText(R.string.no_description);
+            System.out.print("Null pointer exception: description.");
         }
 
         return view;
