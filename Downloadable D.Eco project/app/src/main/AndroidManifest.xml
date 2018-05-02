@@ -46,6 +46,8 @@
         <activity
             android:name=".TreeInfoPage"
             android:label="@string/title_activity_tree_info_page"></activity>
+        <activity android:name=".MainTreeInfoPage"
+            android:label="mainInfoPage"></activity>
     </application>
 
 </manifest>
