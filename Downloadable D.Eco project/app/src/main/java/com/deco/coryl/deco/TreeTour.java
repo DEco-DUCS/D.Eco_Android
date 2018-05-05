@@ -74,9 +74,8 @@ public class TreeTour extends FragmentActivity implements OnMapReadyCallback, Go
     ArrayList<LatLng> trees;
 
     // defined zoom level for google maps we will use
-    public static final int ZOOM_LEVEL = 16;
-    // zoom update level for location updates
-    public static final int UPDATE_ZOOM_LEVEL = 18;
+    public static final int ZOOM_LEVEL = 18;
+
     // Variables for Current location functionality
     private GoogleApiClient client;
     protected LocationRequest locationRequest;

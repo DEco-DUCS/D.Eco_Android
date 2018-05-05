@@ -77,8 +77,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
     private Marker currentLocationMarker;
     public static final int REQUEST_LOCATION_CODE = 99;
     private boolean locationEnabled = false;
-    public static final int ZOOM_LEVEL = 16;
-    public static final int UPDATE_ZOOM_LEVEL = 18;
+    public static final int ZOOM_LEVEL = 18;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -212,7 +211,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
 
         //edit view to focus in on current location marker
         mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
-        mMap.moveCamera(CameraUpdateFactory.zoomTo(UPDATE_ZOOM_LEVEL));
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(ZOOM_LEVEL));
 
         // ???
         if(client != null) {
