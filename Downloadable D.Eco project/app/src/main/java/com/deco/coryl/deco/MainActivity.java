@@ -270,24 +270,32 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         // Set info winder adapter to our custom info window
         CustomInfoWindowGoogleMaps customInfoWindow = new CustomInfoWindowGoogleMaps(this);
         mMap.setInfoWindowAdapter(customInfoWindow);
-        /*mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {
                 //Log.e("MARKER_DATA:",marker.getTitle().toString()+marker.getSnippet().toString()+marker.getTag());
+                Intent intent = new Intent(MainActivity.this,MainTreeInfoPage.class);
                 String title = marker.getTitle().toString();
                 String subTitle = marker.getSnippet().toString();
                 Tree treeData = (Tree) marker.getTag();
                 //Log.e("TREE_DATA", treeData.getDescription().toString()+treeData.getImage().toString());
-                String filepath = treeData.getImage();
-                String description = treeData.getDescription();
-                Intent intent = new Intent(MainActivity.this,TreeInfoPage.class);
+                try {
+                    String filepath = treeData.getImage();
+                    intent.putExtra("filepath",filepath);
+                } catch (NullPointerException e){
+                    System.out.print("Null pointer exceptiion: image.");
+                }
+                try {
+                    String description = treeData.getDescription();
+                    intent.putExtra("description",description);
+                } catch (NullPointerException e) {
+                    System.out.print("Null pointer exception: description.");
+                }
                 intent.putExtra("title",title);
                 intent.putExtra("subtitle",subTitle);
-                intent.putExtra("filepath",filepath);
-                intent.putExtra("description",description);
                 startActivity(intent);
             }
-        });*/
+        });
 
 
     }
@@ -308,7 +316,7 @@ public class MainActivity extends FragmentActivity implements OnMapReadyCallback
         // manager.
         mMap.setOnCameraIdleListener(mClusterManager);
         mMap.setOnMarkerClickListener(mClusterManager);
-        mMap.setOnInfoWindowClickListener(mClusterManager);
+        //mMap.setOnInfoWindowClickListener(mClusterManager);
 
         mClusterManager.setRenderer(new OwnIconRendered(this, mMap, mClusterManager));
 
